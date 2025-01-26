@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecSales - Home</title>
+
+    <!-- Incluindo o Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"> <!-- Para organizar o CSS em um arquivo separado, se desejar -->
+</head>
+
+<body>
+    <header>
+        <div id="area-cabecalho" class="text-center py-3">
+            <span class="h2">Tec<span class="text-white">Sales</span></span>
+        </div>
+
+        <nav id="area-menu" class="bg-primary py-3">
+            <div class="container">
+                <a href="menu.html" class="text-white mx-3 text-decoration-none">Home</a>
+                <a href="cadastro.html" class="text-white mx-3 text-decoration-none">Jogos</a>
+                <a href="#" class="text-white mx-3 text-decoration-none">Celulares</a>
+                <a href="#" class="text-white mx-3 text-decoration-none">Informática</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="area-principal" class="container py-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="area-jogos" class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h2 class="card-title">Jogo 1</h2>
+                            <img src="https://wallpaperaccess.com/full/2379005.jpg" class="card-img-top" alt="Imagem de um jogo" />
+                            <div class="card-body">
+                                <p><strong>League of Legends (LoL)</strong> é um jogo eletrônico multiplayer online de batalha em arenas (MOBA) desenvolvido e publicado pela Riot Games. Lançado em 2009, o jogo coloca duas equipes de cinco jogadores cada em um mapa chamado Summoner's Rift.</p>
+                            </div>
+                            <div class="card-footer text-muted text-center">
+                                Empresa responsável: Riot Games
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h2 class="card-title">Jogo 2</h2>
+                            <img src="https://wallpaperaccess.com/full/1291017.jpg" class="card-img-top" alt="Imagem de um jogo" />
+                            <div class="card-body">
+                                <p><strong>Dota 2</strong> é um jogo eletrônico multiplayer online de batalha em arenas (MOBA) desenvolvido e publicado pela Valve Corporation. Lançado em 2013, é a sequência do mod Defense of the Ancients (Dota), criado para Warcraft III.</p>
+                            </div>
+                            <div class="card-footer text-muted text-center">
+                                Empresa responsável: Valve Corporation
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h2 class="card-title">Jogo 3</h2>
+                            <img src="https://th.bing.com/th/id/OIP.hco5vU5HQ3zI1dbsv2T1jQHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Imagem de um jogo" />
+                            <div class="card-body">
+                                <p><strong>World of Warcraft (WoW)</strong> é um jogo eletrônico de role-playing online massivo (MMORPG) desenvolvido e publicado pela Blizzard Entertainment. Lançado em 2004, WoW se passa no universo de Azeroth, onde jogadores podem explorar um vasto mundo aberto, interagir com outros jogadores e completar missões.</p>
+                            </div>
+                            <div class="card-footer text-muted text-center">
+                                Empresa responsável: Blizzard Entertainment
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="categorias">
+                    <h3 class="text-center">Categorias</h3>
+                    <div id="items-categorias">
+                        <div>
+                            <p>Horror</p>
+                            <p>MMORPG</p>
+                            <p>Ação</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div id="categorias-lista">
+                    <h3 class="text-center">Lista de jogos</h3>
+                    <div id="items-categorias-lista">
+                        <div>
+                            <p>Jogo 1</p>
+                            
+                            <p>Jogo 2</p>
+                            
+                            <p>Jogo 3</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<style>
+    body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #dee2e6;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+#categorias-lista{
+    display: inline-block;
+    margin-bottom: 150px;
+    background-color: white;
+    border-radius: 5%;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #dcdcdc; 
+    padding: 15px;
+    margin: 15px;
+    width: 280px;
+}
+/* Estilos gerais para a página */
+#area-cabecalho {
+    font-size: 24px;
+    background: royalblue;
+}
+
+#area-menu {
+    background: #5a5ac4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#area-menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+#area-menu a:hover {
+    color: #FFD700; /* Um dourado que destaca quando o usuário passa o mouse */
+    transition: color 0.3s ease;
+}
+
+.header {
+    background-color: #5353ec;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+p {
+    font-size: 16px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto; /* A altura será proporcional à largura da imagem */
+}
+
+/* Estilos gerais para a área principal */
+#area-principal {
+    background: #dee2e6;
+}
+
+/* Estilo específico para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    #area-principal {
+        width: 100%; 
+        padding: 15px; 
+        background: #f8f9fa; 
+        margin-bottom: 20px; 
+    }
+    
+    .card {
+        margin-bottom: 15px; 
+    }
+
+    .card-img-top {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/* box sizing usado para garantir que o box-sizing nao quebre o layout */
+#categorias {
+    float: right;
+    border: 1px solid #dcdcdc; 
+    background-color: #f8f8f8; 
+    width: 250px; 
+    padding: 15px;
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#categorias-lista{
+    display: inline-block;
+    margin-bottom: 150px;
+    background-color: #f8f8f8; 
+    border-radius: 5%;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #dcdcdc; 
+    padding: 15px;
+    margin: 15px 100px;
+    width: 250px;
+    box-sizing: border-box; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+
+}
+
+#items-categorias {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    color: #0051ff; 
+    font-weight: bold;
+}
+
+#items-categorias p {
+    margin-bottom: 10px; 
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+    #area-pincipal {
+        width: 100%;
+        float: none;
+    }
+
+    #categorias {
+        width: 100%;
+        position: relative; 
+        float: none; 
+        margin-top: 20px; 
+    }
+
+    #area-menu {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #area-menu a {
+        margin: 5px 0;
+    }
+}
+
+</style>
